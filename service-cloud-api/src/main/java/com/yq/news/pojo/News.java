@@ -2,7 +2,9 @@ package com.yq.news.pojo;
 
 import java.util.Date;
 
+import lombok.experimental.Accessors;
 
+@Accessors(chain=true)
 public class News {
     public News() {
 	}

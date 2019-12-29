@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.yq.news.pojo.News;
 
-@FeignClient(value = "SC-PROVIDER")
+@FeignClient(value = "SC-PROVIDER",fallbackFactory=NewsClientServiceFallbackFactory.class)
 public interface  NewsClientService {
 	
 	@RequestMapping(value="/news/list",method = RequestMethod.GET)
