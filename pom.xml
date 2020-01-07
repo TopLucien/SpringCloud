@@ -97,5 +97,6 @@
 		<module>service-cloud-provider-8003</module>
 		<module>service-cloud-consumer-feign</module>
 		<module>service-cloud-provider-hystrix-8001</module>
+		<module>service-cloud-consumer-hystrix-dashboard</module>
 	</modules>
 </project>
